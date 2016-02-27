@@ -1,0 +1,39 @@
+{
+  "name": "react-newbie",
+  "version": "0.0.0",
+  "description": "Todo App",
+  "main": "index.js",
+  "scripts": {
+    "start": "watchify --extension=js -o bundle.js index.js & python -m SimpleHTTPServer"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bustta/react-newbie.git"
+  },
+  "keywords": [
+    "redux",
+    "react"
+  ],
+  "author": "bustta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bustta/react-newbie/issues"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
+  "homepage": "https://github.com/bustta/react-newbie#readme",
+  "dependencies": {
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0",
+    "react-redux": "^3.1.0",
+    "redux": "^3.0.0"
+  },
+  "devDependencies": {
+    "browserify": "~10.2.4",
+    "babelify": "~6.1.2",
+    "watchify": "^3.3.1"
+  }
+}
